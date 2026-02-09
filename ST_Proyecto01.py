@@ -51,7 +51,7 @@ col3.metric("Sesgo",f"{sesgo:.4}")
 ## Cálculo de Métricas de Riesgo
 st.subheader(f'Métricas de Riesgo : {stock}')
 metricas = ["VaR", "CVaR / ES"]
-metodos = ["Distribución normal", "Distribución t-Student", "Histórico", "Monte Carlo (normal)", "Monte Carlo (t-Student)"]
+metodos = ["Paramétrico (normal)", "Paramétrico (t-Student)", "Histórico", "Monte Carlo (normal)", "Monte Carlo (t-Student)"]
 alphas = [0.95, 0.975, 0.99]
 
 # Seleccionadores de opciones:  
@@ -205,5 +205,6 @@ col8.metric("Número de Violaciones VaR móvil (0.95 normal)", f'{n_viol_95}')
 col8.metric("Número de Violaciones VaR móvil (0.99 normal)", f'{n_viol_99}')
 col9.metric("Porcentaje de Violaciones VaR móvil (0.95 normal)", f'{p_viol_95:.4%}')
 col9.metric("Porcentaje de Violaciones VaR móvil (0.99 normal)", f'{p_viol_99:.4%}')
+
 
 ## Fin del programa
